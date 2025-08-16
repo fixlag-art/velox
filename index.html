@@ -3,51 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Velox | FIXLAG.ART</title>
+  <title>Velox — Top | FIXLAG.ART</title>
   <link rel="stylesheet" href="/assets/common.css">
   <style>
-    /* 準備中カードの上品スタイル */
-    .notice {
-      border: 1px dashed #d8dee4;
-      background: #fff;
-      border-radius: .8rem;
-      padding: 16px 18px;
-    }
-    .notice .title { font-weight: 800; margin: 2px 0 6px; }
-    .notice .sub   { color: var(--muted); font-size: .95rem; }
+    .lead{color:var(--muted)}
+    .notice{background:#fff;border:1px solid var(--border);border-radius:.8rem;padding:1rem}
+    .notice h3{margin:.2rem 0 .4rem;font-size:1.05rem}
   </style>
 </head>
 <body>
 <div class="layout">
-  <!-- 左：共通サイドナビ -->
   <nav class="sidenav" aria-label="Global">
     <div class="logo">FIXLAG.ART</div>
-    <a href="/">Index</a>
+    <a href="/">Nexus</a>
     <a href="/sonic/">Sonic</a>
     <a href="/relic/">Relic</a>
-    <a href="/velox/">Velox</a>
+    <a href="/velox/" class="active">Velox</a>
     <a href="/gizmo/">Gizmo</a>
-    <a href="/about/">About</a>
     <div class="sep"></div>
   </nav>
 
-  <!-- 右：本文 -->
   <main class="content">
-    <!-- 右上の固定帯（チップは後で増やせるように空のまま） -->
     <nav class="subnav" aria-label="Velox sections" data-base="/velox/"></nav>
-    <script id="subnav-data" type="application/json">[]</script>
+    <script id="subnav-data" type="application/json">
+    [["Top","/velox/"]]
+    </script>
     <script src="/assets/subnav.js" defer></script>
     <script src="/assets/common.js" defer></script>
 
     <article class="page">
       <h1>Velox</h1>
+      <p class="lead">ヴェロックス</p>
 
-      <section class="notice" role="status" aria-live="polite">
-        <div class="title">In preparation / 準備中</div>
-        <div class="sub">
-          このカテゴリは現在、ページ構成と資料を整備中です。公開までしばらくお待ちください。<br>
-          We’re curating content and polishing the layout for this section.
-        </div>
+      <section class="notice" role="status" aria-live="polite" style="margin-top:12px">
+        <h3>In preparation</h3>
+        <p>We are preparing curated articles and photographs for this section.</p>
+        <p class="lead">このセクションは現在整備中です。公開までしばらくお待ちください。</p>
       </section>
     </article>
   </main>
