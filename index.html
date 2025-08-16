@@ -4,34 +4,53 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Velox | FIXLAG.ART</title>
-  <link rel="stylesheet" href="https://fixlag.art/assets/common.css">
+  <link rel="stylesheet" href="/assets/common.css">
+  <style>
+    /* 準備中カードの上品スタイル */
+    .notice {
+      border: 1px dashed #d8dee4;
+      background: #fff;
+      border-radius: .8rem;
+      padding: 16px 18px;
+    }
+    .notice .title { font-weight: 800; margin: 2px 0 6px; }
+    .notice .sub   { color: var(--muted); font-size: .95rem; }
+  </style>
 </head>
 <body>
 <div class="layout">
+  <!-- 左：共通サイドナビ -->
   <nav class="sidenav" aria-label="Global">
     <div class="logo">FIXLAG.ART</div>
-    <a href="https://fixlag.art/">Index</a>
-    <a href="https://fixlag.art/sonic/">Sonic</a>
-    <a href="https://fixlag.art/relic/">Relic</a>
-    <a href="https://fixlag.art/velox/">Velox</a>
-    <a href="https://fixlag.art/gizmo/">Gizmo</a>
-    <a href="https://fixlag.art/about/">About</a>
+    <a href="/">Index</a>
+    <a href="/sonic/">Sonic</a>
+    <a href="/relic/">Relic</a>
+    <a href="/velox/">Velox</a>
+    <a href="/gizmo/">Gizmo</a>
+    <a href="/about/">About</a>
     <div class="sep"></div>
   </nav>
 
+  <!-- 右：本文 -->
   <main class="content">
-    <nav class="subnav" aria-label="Velox sections">
-      <!-- 例: <a href="/velox/route01/" class="chip">Route 01</a> -->
-    </nav>
+    <!-- 右上の固定帯（チップは後で増やせるように空のまま） -->
+    <nav class="subnav" aria-label="Velox sections" data-base="/velox/"></nav>
+    <script id="subnav-data" type="application/json">[]</script>
+    <script src="/assets/subnav.js" defer></script>
+    <script src="/assets/common.js" defer></script>
 
     <article class="page">
       <h1>Velox</h1>
-      <div class="card">
-        <p>ドライブ・移動の入口。ルートやイベントをチップに。</p>
-      </div>
+
+      <section class="notice" role="status" aria-live="polite">
+        <div class="title">In preparation / 準備中</div>
+        <div class="sub">
+          このカテゴリは現在、ページ構成と資料を整備中です。公開までしばらくお待ちください。<br>
+          We’re curating content and polishing the layout for this section.
+        </div>
+      </section>
     </article>
   </main>
 </div>
-<script src="https://fixlag.art/assets/common.js"></script>
 </body>
 </html>
