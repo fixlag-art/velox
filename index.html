@@ -1,18 +1,14 @@
 <!doctype html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Velox — Top | FIXLAG.ART</title>
+  <title>Velox | FIXLAG.ART</title>
   <link rel="stylesheet" href="/assets/common.css">
-  <style>
-    .lead{color:var(--muted)}
-    .notice{background:#fff;border:1px solid var(--border);border-radius:.8rem;padding:1rem}
-    .notice h3{margin:.2rem 0 .4rem;font-size:1.05rem}
-  </style>
 </head>
 <body>
 <div class="layout">
+  <!-- Left: unified sidenav -->
   <nav class="sidenav" aria-label="Global">
     <div class="logo">FIXLAG.ART</div>
     <a href="/">Nexus</a>
@@ -20,28 +16,34 @@
     <a href="/relic/">Relic</a>
     <a href="/velox/" class="active">Velox</a>
     <a href="/gizmo/">Gizmo</a>
+    <a href="/about/">About</a>
     <div class="sep"></div>
   </nav>
 
+  <!-- Right: content -->
   <main class="content">
-    <nav class="subnav" aria-label="Velox sections" data-base="/velox/"></nav>
+    <!-- Top-only subnav -->
+    <nav class="subnav" aria-label="Section" data-base="/velox/"></nav>
     <script id="subnav-data" type="application/json">
-    [["Top","/velox/"]]
+      [ ["Top","/velox/"] ]
     </script>
-    <script src="/assets/subnav.js" defer></script>
-    <script src="/assets/common.js" defer></script>
 
     <article class="page">
-      <h1>Velox</h1>
-      <p class="lead">ヴェロックス</p>
+      <h1 style="margin:6px 0 12px">Velox</h1>
 
-      <section class="notice" role="status" aria-live="polite" style="margin-top:12px">
-        <h3>In preparation</h3>
-        <p>We are preparing curated articles and photographs for this section.</p>
-        <p class="lead">このセクションは現在整備中です。公開までしばらくお待ちください。</p>
-      </section>
+      <div class="card">
+        <p class="lead" style="margin:0 0 .5rem">
+          In preparation<span style="margin:0 .4em">—</span>please check back soon.
+        </p>
+        <p style="color:var(--muted); margin:0">
+          準備中です。しばらくしてから、もう一度お越しください。
+        </p>
+      </div>
     </article>
   </main>
 </div>
+
+<script src="/assets/subnav.js" defer></script>
+<script src="/assets/common.js" defer></script>
 </body>
 </html>
